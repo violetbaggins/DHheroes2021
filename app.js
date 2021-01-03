@@ -11,7 +11,7 @@ const path = require('path');
 app.use(express.static('public'));
 
 // Levantando el Servidor en el puerto 3030
-app.listen(3030, () => console.log('Server running in 3030 port'));
+app.listen(process.env.PORT || 3030, () => console.log('Server running in 3030 port'));
 
 /*
     ** RUTAS A LOS RECURSOS **
