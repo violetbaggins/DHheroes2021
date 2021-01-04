@@ -10,8 +10,9 @@ const path = require('path');
 // Usando recursos estáticos.
 app.use(express.static('public'));
 
-// Levantando el Servidor en el puerto 3030
-app.listen(process.env.PORT || 3030, () => console.log('Server running in 3030 port'));
+// Levantando el Servidor en el puerto 3030 
+
+app.listen( 3030, () => console.log('Server running in 3030 port'));
 
 /*
     ** RUTAS A LOS RECURSOS **
